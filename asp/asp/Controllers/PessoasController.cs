@@ -84,7 +84,7 @@ namespace crud.Controllers
                 }
                 else
                 {
-                    return View();
+                    return View("CriarPessoa", pessoa);
                 }
                 
             }
