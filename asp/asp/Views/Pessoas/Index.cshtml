@@ -9,6 +9,21 @@
     Layout = "_Layout";
 }
 
+@if (TempData["Mensagem"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Mensagem"]
+    </div>
+
+}
+
+@if (TempData["MensagemError"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MensagemError"]
+    </div>
+
+}
 
 <h2>Index</h2>
 
@@ -56,9 +71,9 @@
                     @Html.DisplayFor(modelItem => item.Telefone)
                 </td>
                 <td>
-                    <a href="/pessoas/atualizarpessoa/@item.Id">Editar</a> 
-                   
-                    <a href="/pessoas/excluirpessoa/@item.Id" >Deletar</a>
+                    <a href="/pessoas/atualizarpessoa/@item.Id">Editar</a>
+
+                    <a href="/pessoas/excluirpessoa/@item.Id">Deletar</a>
                 </td>
             </tr>
         }

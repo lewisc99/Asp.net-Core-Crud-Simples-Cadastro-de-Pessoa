@@ -43,7 +43,7 @@ namespace AspNetCore
             WriteLiteral("\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(12, 312, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c728f741ca974344a69e51f41f32e0f2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35291f5b0d6e4d1492961b54c6fe2522", async() => {
                 BeginContext(18, 299, true);
                 WriteLiteral(@"
     <meta name=""viewport"" content=""width=device-width"" />
@@ -67,7 +67,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(326, 470, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa0bc5a400e34914831eae07b4d1d3bc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6b958520c249467ab29fd90f00d5a64f", async() => {
                 BeginContext(332, 147, true);
                 WriteLiteral("\r\n    <header>\r\n       \r\n       \r\n    </header>\r\n    <div class=\"container\">\r\n\r\n        <div>\r\n            <!-- Conteúdo - Página -->\r\n            ");
                 EndContext();

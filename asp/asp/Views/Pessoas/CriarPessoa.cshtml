@@ -9,7 +9,7 @@
 
 }
 
-<h2>CriarPessoa</h2>
+<h2>Criar Pessoa</h2>
 
 <h4>Pessoa</h4>
 <hr />
@@ -19,24 +19,31 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" name="name"  class="form-control" id="nome" placeholder="Digite um nome" value="@Model.Name">
+                <input type="text" name="name" class="form-control" id="nome" placeholder="Digite um nome" value="@Model.Name">
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
 
             </div>
             <div class="form-group">
                 <label for="Sobrenome" class="form-label">Sobrenome</label>
-                <input type="text" name="sobrenome"  class="form-control" id="Sobrenome" placeholder="Digite um Sobrenome" value="@Model.SobreNome">
+                <input type="text" name="sobrenome" class="form-control" id="Sobrenome" placeholder="Digite um Sobrenome" value="@Model.SobreNome">
+                @Html.ValidationMessageFor(model => model.CPF, "", new { @class = "text-danger" })
+
             </div>
             <div class="form-group">
                 <label for="CPF" class="form-label">CPF</label>
-                <input type="text" name="cpf"  class="form-control" id="CPF" placeholder="Digite um CPF" value="@Model.CPF">
+                <input type="text" name="cpf" class="form-control" id="CPF" placeholder="Digite um CPF" value="@Model.CPF">
+                @Html.ValidationMessageFor(model => model.CPF, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
                 <label for="idade" class="form-label">Idade</label>
                 <input type="text" name="idade" class="form-control" id="idade" placeholder="Digite uma Idade" value="@Model.Idade">
+                @Html.ValidationMessageFor(model => model.Idade, "", new { @class = "text-danger" })
             </div>
             <div class="form-group">
                 <label for="Telefone" class="form-label">Telefone</label>
                 <input type="text" name="telefone" class="form-control" id="Telefone" placeholder="Digite um Telefone" value="@Model.Telefone">
+                @Html.ValidationMessageFor(model => model.Telefone, "", new { @class = "text-danger" })
+
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-dark">Salvar</button>

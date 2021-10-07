@@ -25,6 +25,7 @@ namespace crud.Controllers
         [HttpGet]
         public IActionResult CriarPessoa()
         {
+           
             return View(new Pessoa());
         }
         [HttpPost]
@@ -34,6 +35,8 @@ namespace crud.Controllers
             {
                 _contexto.Add(pessoa);
                 _contexto.SaveChanges();
+
+                TempData["Mensagem"] = "A Pessoa " + pessoa.Name + " foi cadastrada com sucesso.";
 
                 return RedirectToAction("Index");
             }
@@ -49,6 +52,7 @@ namespace crud.Controllers
 
             if (id!= null)
             {
+               
                
                 Pessoa pessoa = _contexto.Pessoas.Find(id);
                 return View("CriarPessoa", pessoa);
@@ -72,8 +76,11 @@ namespace crud.Controllers
                     _contexto.Update(pessoa);
 
                     _contexto.SaveChanges();
+                    TempData["Mensagem"] = "A pessoa " + pessoa.Name + " foi atualizada com sucesso";
 
                     return RedirectToAction("index");
+
+
                 }
                 else
                 {
@@ -112,6 +119,8 @@ namespace crud.Controllers
                 _contexto.Remove(pessoa);
 
                 _contexto.SaveChanges();
+
+                TempData["MensagemError"] = "A Pessoa " + pessoa.Name + " foi removida com sucesso. ";
 
                 return RedirectToAction("index");
             }
