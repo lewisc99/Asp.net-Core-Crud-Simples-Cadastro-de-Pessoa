@@ -1,15 +1,16 @@
 # ASPNET Core MVC - Crud de cadastro de Pessoa.
 
-projeto básico de estudo, desenvolvimento de aplicações web com ASP.NET Core MVC
-usando os  fundamentos e a utilização do framework.
-
+Este projeto tem como objetivo principal a elaboração de um estudo básico para o desenvolvimento de aplicações web utilizando o ASP.NET Core MVC, por meio da utilização dos fundamentos e recursos disponíveis no framework. Com isso, é possível obter um entendimento mais aprofundado sobre as principais características dessa tecnologia e sua aplicação prática em projetos reais. Através desse estudo, será possível aprimorar habilidades técnicas e conhecimentos relacionados à programação web, além de oferecer uma base sólida para o desenvolvimento de projetos mais complexos e desafiadores.
 
 <br />
 <br />
 serviços utilizadas:
+NET - C# </br>
 CRUD Scaffolding</br>
-Sql Server and migration</br>
+SQL Server and migration</br>
 Validation</br>
+Entity Framework </br>
+
 
 
 
